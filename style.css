@@ -501,13 +501,18 @@ section {
 
 /* Course Cards */
 .course-card {
+<<<<<<< HEAD
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+=======
+    transition: transform 0.3s ease;
+>>>>>>> a359ef029a34bac68b635fc259b1a53ae2bfa29f
     margin-bottom: 30px;
     height: 100%;
     border: none;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+<<<<<<< HEAD
     position: relative;
     transform: translateY(0);
     will-change: transform;
@@ -516,6 +521,12 @@ section {
 .course-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+=======
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+>>>>>>> a359ef029a34bac68b635fc259b1a53ae2bfa29f
 }
 
 .course-card .card-img-top {
@@ -524,6 +535,7 @@ section {
     align-items: center;
     justify-content: center;
     color: white;
+<<<<<<< HEAD
     position: relative;
     overflow: hidden;
 }
@@ -556,6 +568,8 @@ section {
 
 .course-card:hover .card-img-top i {
     transform: scale(1.1);
+=======
+>>>>>>> a359ef029a34bac68b635fc259b1a53ae2bfa29f
 }
 
 .course-card .card-body {
@@ -566,7 +580,10 @@ section {
 .course-card .card-title {
     font-weight: 600;
     margin-bottom: 1rem;
+<<<<<<< HEAD
     color: #2c3e50;
+=======
+>>>>>>> a359ef029a34bac68b635fc259b1a53ae2bfa29f
 }
 
 .course-card .card-text {
@@ -578,12 +595,15 @@ section {
     width: 100%;
     padding: 0.75rem;
     font-weight: 500;
+<<<<<<< HEAD
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .course-card .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+=======
+>>>>>>> a359ef029a34bac68b635fc259b1a53ae2bfa29f
 }
 
 /* Course Card Specific Colors */
@@ -1520,6 +1540,7 @@ main {
     color: white !important;
     text-decoration: none;
 } 
+<<<<<<< HEAD
 
 /* Course Categories */
 .course-category {
@@ -1590,4 +1611,6 @@ main {
         font-size: 1.5rem;
     }
 } 
+=======
+>>>>>>> a359ef029a34bac68b635fc259b1a53ae2bfa29f
   
