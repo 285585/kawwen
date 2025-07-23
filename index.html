@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كوّن - منصة تعليمية عربية</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <!-- <div class="top-bar">
+        <div class="container d-flex justify-content-end">
+            <div class="d-flex gap-3">
+                <a href="#" class="text-white text-decoration-none">تواصل معنا</a>
+                <a href="#" class="text-white text-decoration-none">عن كوّن</a>
+                <a href="#" class="text-white text-decoration-none">السياسة والخصوصية</a>
+                <a href="#" class="text-white text-decoration-none">الرئيسية</a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="logo.png" alt="كوّن">
+                كوّن
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">المواد الدراسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">عن كوّن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="display-4 fw-bold mb-4">تعلم بطريقة مختلفة مع كوّن</h1>
+                    <p class="lead mb-5">منصة تعليمية عربية تساعدك على تطوير مهاراتك وتحقيق أهدافك</p>
+                    <a href="#contact" class="btn btn-lg shadow-sm">تواصل معنا للبدء</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">المواد الدراسية</h2>
+
+            <!-- قسم العلوم الشرعية -->
+            <div class="course-category mb-5">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-mosque me-2"></i>
+                    العلوم الشرعية
+                </h3>
+                <div class="row g-4">
+                    <!-- الفقه الميسر -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card fiqh">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fas fa-book fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">الفقه الميسر</h3>
+                                <p class="card-text">تعلم أحكام الفقه الإسلامي بأسلوب سهل وميسر</p>
+                                <div class="mb-3">
+                                    <span class="badge bg-success">
+                                        <i class="fas fa-gift me-1"></i>
+                                        مجاني
+                                    </span>
+                                </div>
+                                <a href="fiqh.html" class="btn btn-success">تصفح الكورس المجاني</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم تطوير المواقع والتطبيقات -->
+            <div class="course-category mb-5">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-code me-2"></i>
+                    تطوير المواقع والتطبيقات
+                </h3>
+                <div class="row g-4">
+                    <!-- تطوير الواجهات -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card frontend">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fas fa-code fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">تطوير الواجهات</h3>
+                                <p class="card-text">تعلم تصميم وبرمجة المواقع الإلكترونية</p>
+                                <a href="frontend.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- JavaScript & TypeScript -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card javascript">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fab fa-js fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">JavaScript & TypeScript</h3>
+                                <p class="card-text">تعلم برمجة الويب باستخدام JavaScript و TypeScript</p>
+                                <a href="javascript.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- تطوير الخلفيات - مخفي مؤقتاً
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card backend">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fas fa-server fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">تطوير الخلفيات</h3>
+                                <p class="card-text">تعلم برمجة خلفيات المواقع والتطبيقات</p>
+                                <a href="backend.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <!-- تطوير تطبيقات سطح المكتب - مخفي مؤقتاً
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card desktop">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fas fa-desktop fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">تطوير تطبيقات سطح المكتب</h3>
+                                <p class="card-text">تعلم تطوير التطبيقات باستخدام Java و SQL</p>
+                                <a href="desktop.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+
+            <!-- قسم لغات البرمجة -->
+            <div class="course-category mb-5">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-laptop-code me-2"></i>
+                    لغات البرمجة
+                </h3>
+                <div class="row g-4">
+                    <!-- برمجة Python -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card python">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fab fa-python fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">برمجة Python</h3>
+                                <p class="card-text">تعلم البرمجة بلغة Python مع التطبيقات العملية</p>
+                                <a href="python.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- برمجة ++C -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card cpp">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fab fa-cuttlefish fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">برمجة ++C</h3>
+                                <p class="card-text">تعلم البرمجة بلغة ++C وتطوير البرامج عالية الأداء</p>
+                                <a href="cpp.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم أطر العمل والتقنيات -->
+            <div class="course-category mb-5">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-layer-group me-2"></i>
+                    أطر العمل والتقنيات
+                </h3>
+                <div class="row g-4">
+                    <!-- Spring Boot -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card spring">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fab fa-java fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Spring Boot</h3>
+                                <p class="card-text">تعلم تطوير تطبيقات الويب باستخدام Spring Boot</p>
+                                <a href="spring.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Angular -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card angular">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fab fa-angular fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Angular</h3>
+                                <p class="card-text">تعلم تطوير تطبيقات الويب الحديثة باستخدام Angular</p>
+                                <a href="angular.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- قواعد البيانات -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card database">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fas fa-database fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">قواعد البيانات</h3>
+                                <p class="card-text">تعلم تصميم وإدارة قواعد البيانات SQL و NoSQL</p>
+                                <a href="database.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card github">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fab fa-github fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Git & GitHub</h3>
+                                <p class="card-text">تعلم إدارة المشاريع البرمجية باحترافية</p>
+                                <a href="github.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم اللغات -->
+            <div class="course-category mb-5">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-language me-2"></i>
+                    اللغات
+                </h3>
+                <div class="row g-4">
+                    <!-- اللغة العربية -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card arabic">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fas fa-pen-fancy fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">اللغة العربية</h3>
+                                <p class="card-text">تعلم أصول اللغة العربية وفنونها</p>
+                                <a href="arabic.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- اللغة الإنجليزية -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card english">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fas fa-language fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">اللغة الإنجليزية</h3>
+                                <p class="card-text">تعلم اللغة الإنجليزية بأسلوب تفاعلي وممتع</p>
+                                <a href="english.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- اللغة الفرنسية -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card french">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fas fa-language fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">اللغة الفرنسية</h3>
+                                <p class="card-text">تعلم اللغة الفرنسية بأسلوب تفاعلي وممتع</p>
+                                <a href="french.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم المواد الإضافية -->
+            <div class="course-category mb-5">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-plus-circle me-2"></i>
+                    مواد إضافية
+                </h3>
+                <div class="row g-4">
+                    <!-- التاريخ -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course-card history">
+                            <div class="card-img-top d-flex align-items-center justify-content-center">
+                                <i class="fas fa-landmark fa-4x"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">التاريخ</h3>
+                                <p class="card-text">اكتشف أحداث الماضي وتعلم من دروس التاريخ المهمة</p>
+                                <a href="history.html" class="btn btn-primary">تفاصيل الكورس</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">عن كوّن</h2>
+                    <p class=" lead fs-3">نحن نؤمن بأن التعليم حق للجميع، ونسعى لتوفير محتوى تعليمي عربي عالي الجودة</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary me-2 fs-2"></i>محتوى تعليمي باللغة العربية</li>
+                        <li><i class="fas fa-check-circle text-primary me-2 fs-2"></i>مدرسين ذوي خبرة</li>
+                        <li><i class="fas fa-check-circle text-primary me-2 fs-2"></i>تعلم في أي وقت وأي مكان</li>
+                        <li><i class="fas fa-check-circle text-primary me-2 fs-2"></i>محتوى متنوع ومتكامل</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="logo.png" alt="عن كوّن" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">تواصل معنا</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="contact-logo text-center mb-4">
+                                <img src="logo.png" alt="كوّن" style="height: 80px;">
+                                <h3 class="text-primary mt-3">منصة كوّن التعليمية</h3>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="contact-info text-center">
+                                        <div class="mb-3">
+                                            <i class="fas fa-phone text-primary fa-2x mb-2"></i>
+                                            <h5>اتصل بنا</h5>
+                                            <p class="mb-0">01092077530</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-info text-center">
+                                        <div class="mb-3">
+                                            <i class="fas fa-envelope text-primary fa-2x mb-2"></i>
+                                            <h5>راسلنا</h5>
+                                            <p class="mb-0">kawwen7@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mb-4">
+                                <h4 class="mb-3">تواصل معنا مباشرة</h4>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="https://wa.me/qr/BXVUVL2ZF3CFA1" target="_blank" class="btn btn-success btn-lg">
+                                        <i class="fab fa-whatsapp me-2"></i>واتساب
+                                    </a>
+                                    <a href="https://www.facebook.com/profile.php?id=61578366216898" target="_blank" class="btn btn-primary btn-lg">
+                                        <i class="fab fa-facebook me-2"></i>فيسبوك
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <form class="contact-form mt-4">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">الاسم</label>
+                                    <input type="text" class="form-control form-control-lg" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control form-control-lg" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">الرسالة</label>
+                                    <textarea class="form-control form-control-lg" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>إرسال
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-4 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>كوّن</h5>
+                    <p>منصة تعليمية عربية تهدف إلى تطوير مهارات الطلاب وتحقيق أهدافهم</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>تواصل معنا</h5>
+                    <p>
+                        <a href="https://wa.me/qr/BXVUVL2ZF3CFA1" target="_blank" class="text-light text-decoration-none">
+                            <i class="fab fa-whatsapp me-2"></i>واتساب
+                        </a><br>
+                        <a href="https://www.facebook.com/profile.php?id=61578366216898" target="_blank" class="text-light text-decoration-none">
+                            <i class="fab fa-facebook-f me-2"></i>فيسبوك
+                        </a><br>
+                        <a href="mailto:kawwen7@gmail.com" class="text-light text-decoration-none">
+                            <i class="fas fa-envelope me-2"></i>kawwen7@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">جميع الحقوق محفوظة &copy; 2024 كوّن</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <a href="#" class="back-to-top">↑</a>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9d1d9a82d2.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html> 
