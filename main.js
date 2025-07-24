@@ -328,3 +328,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
   
+
+
+
+
+const endDate = new Date("2026-02-01T00:00:00").getTime();
+
+const countdown = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+  const now = new Date().getTime();
+  const diff = endDate - now;
+
+  if (diff <= 0) {
+    clearInterval(timer);
+    countdown.innerHTML = "انتهى العرض!";
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  countdown.innerHTML = `⏳ ${days} يوم، ${hours} ساعة، ${minutes} دقيقة، ${seconds} ثانية`;
+}, 1000);
