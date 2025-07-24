@@ -356,19 +356,27 @@ const timer = setInterval(() => {
 
 
 
-  const btn = document.getElementById('__z19b');
-  const body = document.body;
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('__z19b');
+    const icon = toggleBtn.querySelector('i');
 
-  // عند تحميل الصفحة - افحص التخزين المحلي
-  if (localStorage.getItem('__ui_theme') === 'dark') {
-    body.classList.add('dark-mode');
-    btn.innerHTML = '<i class="fas fa-sun"></i>';
-  }
+    function updateIcon(isDark) {
+        if (isDark) {
+            icon.classList.replace('fa-moon', 'fa-sun'); // ☀️ في الوضع الداكن
+        } else {
+            icon.classList.replace('fa-sun', 'fa-moon'); // 🌙 في الوضع الفاتح
+        }
+    }
 
-  // عند الضغط على الزر
-  btn.onclick = () => {
-    body.classList.toggle('dark-mode');
-    const dark = body.classList.contains('dark-mode');
-    btn.innerHTML = dark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-    localStorage.setItem('__ui_theme', dark ? 'dark' : 'light');
-  };
+    // إعداد الوضع عند التحميل
+    const isDark = localStorage.getItem('darkMode') === 'enabled';
+    if (isDark) document.body.classList.add('dark-mode');
+    updateIcon(isDark);
+
+    // عند الضغط على الزر
+    toggleBtn.addEventListener('click', () => {
+        const isDarkNow = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', isDarkNow ? 'enabled' : 'disabled');
+        updateIcon(isDarkNow);
+    });
+});
