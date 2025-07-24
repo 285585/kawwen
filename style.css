@@ -1443,7 +1443,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #004080;
-    color: white !important;
+    color: white ;
     text-decoration: none;
     width: 50px;
     height: 50px;
@@ -1458,7 +1458,7 @@ main {
     background-color: #0066cc;
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    color: white !important;
+    color: white ;
     text-decoration: none;
 } 
 
@@ -1641,3 +1641,229 @@ main {
     70% { box-shadow: 0 0 0 10px rgba(255,255,255, 0); }
     100% { box-shadow: 0 0 0 0 rgba(255,255,255, 0); }
   }
+
+
+
+
+
+
+  .contact-section{
+    background-image: url('hero-bg.png');
+  }
+  /* ...................................................................... */
+
+
+
+
+
+
+
+
+
+  /* زر الوضع الليلي */
+.theme-toggle-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .theme-toggle-btn:hover {
+    background-color: #0a58ca;
+    transform: scale(1.1);
+  }
+  
+  /* الوضع الليلي */
+  body.dark-mode {
+    background-color: #121212 !important;
+    color: #f1f1f1 !important;
+  }
+  body.dark-mode .card,
+  body.dark-mode .navbar,
+  body.dark-mode .footer,
+  body.dark-mode .contact-section,
+  body.dark-mode .btn,
+  body.dark-mode .course-card {
+    background-color: #1e1e1e !important;
+    color: #fff !important;
+    border-color: #444 !important;
+  }
+  body.dark-mode .btn-primary {
+    background-color: #0d6efd !important;
+  }
+/* نص قسم عن كوّن في الوضع المظلم */
+body.dark-mode .about-section {
+    background-color: #1a1a1a !important;
+    color: #f1f1f1 !important;
+  }
+  
+  body.dark-mode .about-section h2,
+  body.dark-mode .about-section p,
+  body.dark-mode .about-section li,
+  body.dark-mode .about-section .section-title,
+  body.dark-mode .about-section .fa-check-circle {
+    color: #f1f1f1 !important;
+  }
+  body.dark-mode .about-section .lead {
+    color: #ddd !important;
+  }
+/* تحسين الخلفيات في الوضع المظلم */
+body.dark-mode .course-card,
+body.dark-mode .card,
+body.dark-mode .about-section,
+body.dark-mode .contact-section,
+body.dark-mode .footer,
+body.dark-mode .navbar,
+body.dark-mode .course-category {
+  background-color: #1f1f1f !important;
+  color: #f1f1f1 !important;
+  border-color: #333 !important;
+}
+
+/* البادجات والأزرار */
+body.dark-mode .badge,
+body.dark-mode .btn {
+  background-color: #333 !important;
+  color: #fff !important;
+  border-color: #444 !important;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #0d6efd !important;
+  border-color: #0a58ca !important;
+}
+
+body.dark-mode .btn-success {
+  background-color: #198754 !important;
+  border-color: #146c43 !important;
+}
+
+/* الكروت والأيقونات */
+body.dark-mode .course-card .card-body,
+body.dark-mode .course-card .card-img-top {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+body.dark-mode .fa,
+body.dark-mode .fab,
+body.dark-mode .fas {
+  color: #f1f1f1 !important;
+}
+    /* لمعالجة ظهور عناصر الـ navbar collapse في الوضع المظلم */
+body.dark-mode .navbar-collapse {
+    background-color: #1f1f1f; /* خلفية من نفس لون الوضع المظلم */
+    padding: 1rem;
+  }
+  
+  body.dark-mode .navbar-nav .nav-link {
+    color: #f1f1f1 !important;  /* لون الكتابة فاتح */
+  }
+  
+  body.dark-mode .navbar-nav .nav-link:hover {
+    color: #ffd700 !important;  /* لون عند الوقوف */
+  }
+  body.dark-mode .navbar-collapse {
+    background-color: #1c1c1c;
+  }
+  
+  body.dark-mode .navbar-collapse .nav-link {
+    color: #eee !important;
+  }
+  
+  body.dark-mode .navbar-collapse .nav-link:hover {
+    color: #ffcc00 !important;
+  }
+/* الوضع العادي (المنوّر) */
+body:not(.dark-mode) .navbar-collapse {
+    background-color: #ffffff; /* أبيض */
+  }
+  
+  body:not(.dark-mode) .navbar-collapse .nav-link {
+    color: #000 !important; /* أسود */
+  }
+  
+  body:not(.dark-mode) .navbar-collapse .nav-link:hover {
+    color: #0d6efd !important; /* أزرق عند المرور */
+  }
+  
+  /* الوضع المظلم */
+  body.dark-mode .navbar-collapse {
+    background-color: #1c1c1c; /* خلفية داكنة */
+  }
+  
+  body.dark-mode .navbar-collapse .nav-link {
+    color: #eee !important; /* نص فاتح */
+  }
+  
+  body.dark-mode .navbar-collapse .nav-link:hover {
+    color: #ffcc00 !important; /* لون مميز عند المرور */
+  }
+
+  /* تعميم النص الأبيض في الوضع المظلم */
+body.dark-mode {
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode h5,
+  body.dark-mode h6,
+  body.dark-mode a,
+  body.dark-mode span,
+  body.dark-mode label {
+    color: #fff !important;
+  }
+  /* الوضع العادي */
+.promo-banner {
+    background-color: #ccf4fc;
+    color: #000;
+  }
+  
+  /* الوضع المظلم */
+  body.dark-mode .promo-banner {
+    background-color: #05566d; /* لون أزرق غامق */
+    color: #fff; /* أو #f0f0f0 */
+  }
+  /* الوضع المظلم */
+
+  body.dark-mode i:not(.keep-default-color) {
+    color: #0d47a1 !important;
+  }
+  
+  /* المربع الأساسي */
+.course-price-box {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* الوضع الفاتح */
+  body:not(.dark-mode) .course-price-box {
+    background-color: #f1f1f1;
+    color: #0d47a1;
+    border: 1px solid #ddd;
+  }
+  
+  /* الوضع الداكن */
+  body.dark-mode .course-price-box {
+    background-color: #0d47a1;
+    color: #ffffff;
+    border: 1px solid #1a1a1a;
+  }
+  
+      

@@ -331,7 +331,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-const endDate = new Date("2025-11-01T00:00:00").getTime();
+
+const endDate = new Date("2026-02-01T00:00:00").getTime();
+
 const countdown = document.getElementById("countdown");
 
 const timer = setInterval(() => {
@@ -351,3 +353,24 @@ const timer = setInterval(() => {
 
   countdown.innerHTML = `⏳ ${days} يوم، ${hours} ساعة، ${minutes} دقيقة، ${seconds} ثانية`;
 }, 1000);
+
+
+
+
+
+  const btn = document.getElementById('__z19b');
+  const body = document.body;
+
+  // عند تحميل الصفحة - افحص التخزين المحلي
+  if (localStorage.getItem('__ui_theme') === 'dark') {
+    body.classList.add('dark-mode');
+    btn.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+
+  // عند الضغط على الزر
+  btn.onclick = () => {
+    body.classList.toggle('dark-mode');
+    const dark = body.classList.contains('dark-mode');
+    btn.innerHTML = dark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    localStorage.setItem('__ui_theme', dark ? 'dark' : 'light');
+  };
