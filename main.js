@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-const endDate = new Date("2025-11-01T00:00:00").getTime();
+const endDate = new Date("2025-11-01T00:00:00").getTime(); // تاريخ نهاية العرض بعد 3 شهور
 const countdown = document.getElementById("countdown");
 
 const timer = setInterval(() => {
@@ -352,7 +352,6 @@ const timer = setInterval(() => {
 
   countdown.innerHTML = `⏳ ${days} يوم، ${hours} ساعة، ${minutes} دقيقة، ${seconds} ثانية`;
 }, 1000);
-
 
 
 
