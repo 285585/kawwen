@@ -380,3 +380,18 @@ document.addEventListener('DOMContentLoaded', function () {
         updateIcon(isDarkNow);
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+ window.addEventListener("load", function() {
+        document.getElementById("preloader").classList.add("hidden");
+        document.body.style.overflow = "auto";
+    });
